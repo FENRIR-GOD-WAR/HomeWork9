@@ -268,6 +268,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void increaseVolume_From99To100() {
         Radio radio = new Radio();

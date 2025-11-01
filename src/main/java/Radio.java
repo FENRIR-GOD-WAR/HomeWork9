@@ -2,17 +2,18 @@ public class Radio {
     private int currentStation;
     private int currentVolume;
 
-    public void next(){
+    public void next() {
         if (currentStation != 9) {
             currentStation++;
-        }else{
+        } else {
             currentStation = 0;
         }
     }
+
     public void prev() {
         if (currentStation != 0) {
             currentStation--;
-        }else{
+        } else {
             currentStation = 9;
         }
 
@@ -46,17 +47,19 @@ public class Radio {
         }
         this.currentVolume = currentVolume;
     }
+
     public void increaseVolume() {
         if (currentVolume < 100) {
             currentVolume++;
-        }else{
+        } else {
             currentVolume = 100;
         }
     }
+
     public void decreaseVolume() {
         if (currentVolume > 0) {
             currentVolume--;
-        }else{
+        } else {
             currentVolume = 0;
         }
     }
